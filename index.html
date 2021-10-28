@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    *{
+    margin:0;
+    padding:0;
+   }
+   .container{
+     height:100vh;
+     width:100%;
+    background-image:url(background.jpg);
+    background-size:cover;
+   background-position:center;
+   position:relative;
+   overflow:hidden;
+   text-align: center;
+   text-shadow: rebeccapurple;
+   }
+   .runway{
+    height:200px;
+    width:100%;
+   background-image:url(road.jpg);
+   position:absolute;
+   right:0;
+   bottom:0;
+    
+   }
+   .airplane{
+    width:500px;
+   position:absolute;
+   bottom:150px;
+   right:-200px;
+   animation:plan 15s linear 3;
+   transform-origin:100% 50%;
+   }
+   @keyframes plan{
+   0%{
+     transform:translateX(0px) translateY(0px) rotate(0deg);
+   }
+   30%{
+     transform:translateX(-500px) translateY(-0px) rotate(0deg);
+   }
+   100%{
+     transform:translateX(-1500px) translateY(-200px)rotate(30deg);
+   }
+   }
+   </style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to FCH air lines</h1>
+  <h2>Happy journey</h2>
+
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CSS Animation -Easy tutorials</title>
+  <link rel="style sheet" href="style.css">
+</div>
+<div class="runway">
+<img src="airplane.png" class="airplane">
+</div>
+</body>
+</html>
